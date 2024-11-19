@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>One Auth</title>
+    <meta name="robots" content="noindex, Nofollow, Noimageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="./src/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header
+        class="fixed left-0 pt-8 z-[1000000000] duration-500 transition-all w-full bg-transparent nav-sticky  bg-black  bg-opacity-30 backdrop-blur-md pb-6 "
+        id="mainnavigationBar" data-aos="fade-down" data-aos-anchor-placement="bottom-center">
+        <nav class="flex items-center">
+            <div class="nav-logo xl:min-w-[106px] mx-auto">
+                <a class="flex items-center justify-center" href="./index.html">
+                    <img src="./assets/imgs/1auth-logo-withoutxt.png" style="width: 44px; height: 44px;">
+                    <span class="ml-2 text-2xl font-bold pt-0.5 text-gray-100">1Auth</span></a>
+            </div>
+
+            <ul class="lg:flex mx-auto p-2.5 relative">
+                <li class="nav-item group">
+                    <a href="#" class="px-4 py-2 text-white hover:text-[#7829e3] font-medium text-xl peer">Products
+                        <i
+                            class="fa fa-solid fa-angle-down text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1"></i>
+                    </a>
+                    <div
+                        class="absolute left-0 top-full w-full bg-white shadow-xl rounded-b-lg p-6 z-50 hidden group-hover:flex">
+                        <div class="">
+                            <a href="./sso-idp.html">
+
+                                <div class="p-4 hover:bg-gray-50 rounded-lg group">
+                                    <h3 class="font-semibold text-lg text-gray-800">SSO/IDP</h3>
+                                    <p class="text-gray-600 mt-1">DIY single sign-on for all your applications.</p>
+                                </div>
+                            </a>
+                            <a href="./access-manager.html">
+
+                                <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                    <h3 class="font-semibold text-lg text-gray-800">Access Manager</h3>
+                                    <p class="text-gray-600 mt-1">Simplified, powerful access management for enhanced
+                                        security &amp;
+                                        productivity.</p>
+                                </div>
+                            </a>
+                            <a href="./amfa.html">
+
+                                <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                    <h3 class="font-semibold text-lg text-gray-800">AMFA</h3>
+                                    <p class="text-gray-600 mt-1">Reinforced security that goes far beyond passwords.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./cloud-directory.html">
+
+                                <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                    <h3 class="font-semibold text-lg text-gray-800">Cloud Directory</h3>
+                                    <p class="text-gray-600 mt-1">Highly secure blockchain-powered User Identity Store.
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./password-manager.html">
+
+                                <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                    <h3 class="font-semibold text-lg text-gray-800">Password Manager</h3>
+                                    <p class="text-gray-600 mt-1">Modern and secure self-service password management.
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="./user-lifecycle.html">
+
+                                <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                    <h3 class="font-semibold text-lg text-gray-800">User Lifecycle Manager</h3>
+                                    <p class="text-gray-600 mt-1">Streamlined automation all the way from on-boarding to
+                                        exit.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item relative group">
+                    <a href="#" class="px-4 py-2 text-white hover:text-[#7829e3] font-medium text-xl">Verticals
+                        <i
+                            class="fa fa-solid fa-angle-down text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1"></i>
+
+                    </a>
+                    <div
+                        class="dropdown absolute left-0 top-full w-[400px] bg-white shadow-xl rounded-b-lg p-6 z-50  hidden group-hover:block">
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="./edu.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">Higher
+                                Education</a>
+                            <a href="./it.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">ITes
+                                &amp;
+                                BPO</a>
+                            <a href="./manufacture.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">Manufacturing</a>
+                            <a href="./retail.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">Retail</a>
+                            <a href="./finserv.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">FinServ</a>
+                            <a href="./healthcare.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">Healthcare</a>
+                            <a href="./technology.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">Technology</a>
+                            <a href="./ngo.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">NGOs</a>
+                            <a href="./public-sector.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">Public
+                                Sector</a>
+                            <a href="./travel.html"
+                                class="p-2 hover:bg-gray-50 rounded-lg text-gray-700 hover:text-[#7829e3]">Tourism</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <!-- 
+                <li class="nav-item relative group">
+                    <a href="#" class="px-4 py-2 text-white hover:text-[#7829e3] font-medium text-xl">Resources
+                        <i
+                            class="fa fa-solid fa-angle-down text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1"></i>
+
+                    </a>
+                    <div
+                        class="dropdown absolute left-0 top-full w-[500px] bg-white shadow-xl rounded-b-lg p-6 z-50  hidden group-hover:block">
+                        <div class="flex w-full">
+                            <div class="pt-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-4">CASE STUDIES</h3>
+                                <div class="space-y-4 border-t">
+                                    <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                        <p class="text-gray-600 mt-1 hover:text-[#7829e3]">Powerful data privacy and
+                                            enhanced productivity
+                                            for a leading KPO service provider</p>
+                                    </div>
+                                    <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                        <p class="text-gray-600 mt-1 hover:text-[#7829e3]">Enhanced security &amp;
+                                            custom device-based
+                                            restrictions for a major manufacturer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-4">Blogs</h3>
+                                <div class="space-y-4 border-t">
+                                    <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                        <p class="text-gray-600 mt-1 hover:text-[#7829e3]">A Customized Device-Based
+                                            Access Control
+                                            Solution
+                                            For An Automotive Ancillary Major Using 1Auth</p>
+                                    </div>
+                                    <div class="p-4 hover:bg-gray-50 rounded-lg">
+                                        <p class="text-gray-600 mt-1 hover:text-[#7829e3]">Revolutionizing Identity
+                                            &amp; Access Management
+                                            using
+                                            the Blockchain</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li> -->
+
+                <li class="nav-item group">
+                    <a href="#" class="px-4 py-2 text-white hover:text-[#7829e3] font-medium text-xl">Contact Us
+                    </a>
+                </li>
+
+                <li class="nav-item group">
+                    <a href="#"
+                        class="ml-10 px-6 py-2.5 bg-[#7829e3] text-white font-medium rounded-lg hover:bg-[#7829e3] transition-colors">
+                        Try it
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="main-banner2 h-[100vh] flex items-center justify-center px-6 lg:px-24">
+        <div class="w-[80vw] pl-20">
+            <div class="text-center lg:text-left mt-14" data-aos="fade-right">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-200">
+                    ITeS & BPO
+
+                </h1>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-200">
+                    Customer data privacy meets service efficiency.
+
+                </h2>
+
+                <p class="text-gray-400 mt-6 text-lg" data-aos="fade-right">
+                    Your outsourcing business faces two key challenges - first, highly sensitive customer data that you
+                    have been entrusted with, and second, a large headcount across a range of roles. Identity and access
+                    management solves both these problems, besides several others.
+                </p>
+            </div>
+            <div data-aos="fade-up" class="text-center mt-12">
+                <a href="#"
+                    class="px-10 py-5 bg-[#7829e3] text-white font-medium rounded-lg hover:bg-[#7829e3] transition-colors text-xl">
+                    Start your Free Trial
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
+            <!-- Left Content -->
+            <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                    The path to Zero Trust security
+
+
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    When it comes to safeguarding sensitive client information at your ITeS or BPO business, the Zero
+                    Trust model plugs security gaps and helps you prevent breaches. Identity and access management is
+                    central to setting up your zero trust strategy with least-privilege access and role-based or
+                    privileged access management.
+
+                    With hundreds or even thousands of employees on your rolls, providing unrestricted access for all
+                    users to your customer data assets is a recipe for disaster. As many as 60% of data breaches are the
+                    result of insider threats - both malicious and unintentional. One auth lets you limit access for
+                    each
+                    user to the minimum data they require to perform their role, eliminating a significant portion of
+                    your risk </p>
+            </div>
+
+            <!-- Right Content -->
+            <div class="lg:w-1/2 flex items-center justify-center" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <img src="./assets/banner-imgs/ites.png" alt="App Connectors" class="w-full max-w-lg">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
+            <!-- Left Content: Icon -->
+            <div class="lg:w-1/2 flex items-center justify-center mb-12 lg:mb-0" data-aos="fade-right"
+                data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="relative">
+                    <img src="./assets/banner-imgs/ites1.png" alt="Configuration Icon" class="w-full max-w-md">
+                </div>
+            </div>
+
+            <!-- Right Content: Text -->
+            <div class="lg:w-1/2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                    Secure remote and hybrid operations
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    When you have employees and agents working across multiple locations and devices, a centralized
+                    security system at your office simply doesn't cut it. Control over when, where, and how your team
+                    can access the organization's data helps ensure the integrity of access and considerably reduces the
+                    possibility of fraudulent or malicious activity.
+
+                    Allowing members of your team to access the company's data from any device or network opens you up
+                    to risks. One auth helps you balance flexibility and efficiency with security by enabling access
+                    only
+                    from specific whitelisted IP addresses and devices. The platform also allows you to instantly
+                    identify and flag suspicious login attempts based on unusual login times or unexpected login
+                    locations, to block or challenge such activity.
+
+                    Enforce tight access restrictions to strike the right balance between security and productivity in
+                    today's work-from-anywhere world with One auth Access Manager.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
+            <!-- Left Content -->
+            <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                    Enhanced employee productivity
+
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    An important cause for lost productivity is the dependence of your users on your IT helpdesk for
+                    password recovery and assistance. Users are often stuck being unable to work due to forgotten
+                    passwords or locked accounts until the helpdesk is able to help them fix the issue. Providing a
+                    self-service method of password or account recovery is a great way to reduce or even eliminate such
+                    downtimes.
+
+                    The other major challenge your employees are likely to face is the need to individually access each
+                    of their applications. This means multiple sets of credentials and multiple login actions, and this
+                    often directly results in a higher number of insrtances of forgotten passwords or locked access.
+                    One auth enables you to provide your users with access to multiple applications with a single set of
+                    credentials and a single point of access to streamline the login process and boost productivity for
+                    your employees.
+
+                    Improve ease of access and put your users in control to boost operational efficiency across your
+                    workforce with One auth Password Manager and SSO & IdP.<br><br>
+                </p>
+            </div>
+
+            <!-- Right Content -->
+            <div class="lg:w-1/2 flex items-center justify-center" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <img src="./assets/banner-imgs/ites2.png" alt="App Connectors" class="w-full max-w-lg">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
+            <!-- Left Content: Icon -->
+            <div class="lg:w-1/2 flex items-center justify-center mb-12 lg:mb-0" data-aos="fade-right"
+                data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="relative">
+                    <img src="./assets/banner-imgs/ites3.png" alt="Configuration Icon" class="w-full max-w-md">
+                </div>
+            </div>
+
+            <!-- Right Content: Text -->
+            <div class="lg:w-1/2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                    Streamlined administration processes
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Managing user identity credentials for a large team places a significant load on your IT and admin
+                    teams. From on-boarding and provisioning through support and operations to deprovisioning and exit,
+                    user needs at every stage of the stage of the employee lifecycle require prompt attention, and every
+                    intervention costs your organization time and money. And if not managed correctly, these processes
+                    can actually give rise to security risks if excessive permissions are provided, or if access
+                    privileges are not revoked during an employee's exit.
+
+                    Your IT and admin teams are involved in creating user accounts, assigning roles and access
+                    permissions, modifying privileges through the course of the user's employment, and revocation of
+                    access during deprovisioning. Managing password recovery requests is another major drain on your
+                    team's time. One auth streamlines each of these processes, saving your organization time and money.
+
+                    Seamlessly manage user provisioning, roles, and deprovisioning, and eliminate time wasted on
+                    password assistance with One auth Cloud Directory and Password Manager.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <!-- Top Section -->
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                <!-- Logo and Title -->
+                <div class="mb-8 lg:mb-0">
+                    <div class="flex items-center">
+                        <img src="./assets/imgs/1auth-logo-withoutxt.png" alt="Logo" class="h-12 mr-4">
+                        <div>
+                            <h1 class="text-xl font-bold">One Auth</h1>
+                            <p class="text-sm text-gray-400">A Blitzwork Product</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-400 text-lg font-semibold">An Enterprise <br> Identity & Access Management
+                        Solution</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="grid grid-cols-2 gap-8 text-sm lg:gap-16">
+                    <!-- Products Column -->
+                    <div>
+                        <h3 class="font-semibold text-white mb-4">Products</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-400 hover:text-white space-y-1">Overview</a></li>
+                            <li><a href="./sso-idp.html" class="text-gray-400 hover:text-white space-y-1">SSO & IDP</a>
+                            </li>
+                            <li><a href="./amfa.html" class="text-gray-400 hover:text-white ">AMFA</a></li>
+                            <li><a href="./password-manager.html" class="text-gray-400 hover:text-white">Password
+                                    Manager</a></li>
+                            <li><a href="./access-manager.html" class="text-gray-400 hover:text-white">Access
+                                    Manager</a></li>
+                            <li><a href="./cloud-directory.html" class="text-gray-400 hover:text-white">Cloud
+                                    Directory</a></li>
+                            <li><a href="./user-lifecycle.html" class="text-gray-400 hover:text-white">User Lifecycle
+                                    Manager</a></li>
+                        </ul>
+                    </div>
+                    <!-- Verticals Column -->
+                    <div>
+                        <h3 class="font-semibold text-white mb-4">Verticals</h3>
+                        <ul class="space-y-3">
+                            <li><a href="./edu.html" class="text-gray-400 hover:text-white">Higher Education</a></li>
+                            <li><a href="./it.html" class="text-gray-400 hover:text-white">ITes & BPO</a></li>
+                            <li><a href="./manufacture.html" class="text-gray-400 hover:text-white">Manufacturing</a>
+                            </li>
+                            <li><a href="./retail.html" class="text-gray-400 hover:text-white">Retail</a></li>
+                            <li><a href="./finserv.html" class="text-gray-400 hover:text-white">FinServ</a></li>
+                            <li><a href="./technology.html" class="text-gray-400 hover:text-white">Technology</a></li>
+                            <li><a href="./healthcare.html" class="text-gray-400 hover:text-white">Healthcare</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+            </div>
+
+            <!-- Bottom Section -->
+            <div
+                class="mt-8 border-t border-gray-700 pt-6 flex flex-col lg:flex-row justify-between items-center text-gray-400">
+                <p>All Rights Reserved One Auth 2024</p>
+                <div class="mt-4 lg:mt-0 flex space-x-6">
+                    <ul class="flex items-center max-lg:justify-center social-link gap-4">
+                        <li>
+                            <a href="#" class="transiton-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path
+                                        d="M26.25 14.0749C26.25 7.26802 20.7655 1.75 14 1.75C7.23451 1.75 1.75 7.26802 1.75 14.0749C1.75 20.2265 6.22962 25.3254 12.0859 26.25V17.6375H8.97559V14.0749H12.0859V11.3595C12.0859 8.27062 13.9148 6.5644 16.7129 6.5644C18.0528 6.5644 19.4551 6.80512 19.4551 6.80512V9.83819H17.9104C16.3888 9.83819 15.9141 10.7883 15.9141 11.764V14.0749H19.3115L18.7684 17.6375H15.9141V26.25C21.7704 25.3254 26.25 20.2265 26.25 14.0749Z"
+                                        fill="white"
+                                        class="fill-paragraph dark:fill-gray-100 hover:fill-primary dark:hover:fill-primary">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path
+                                        d="M14 1.75C7.23187 1.75 1.75 7.23187 1.75 14C1.75 19.4206 5.25656 23.9991 10.1259 25.6222C10.7384 25.7294 10.9681 25.3619 10.9681 25.0403C10.9681 24.7494 10.9528 23.7847 10.9528 22.7587C7.875 23.3253 7.07875 22.0084 6.83375 21.3194C6.69594 20.9672 6.09875 19.88 5.57812 19.5891C5.14937 19.3594 4.53688 18.7928 5.56281 18.7775C6.5275 18.7622 7.21656 19.6656 7.44625 20.0331C8.54875 21.8859 10.3097 21.3653 11.0141 21.0437C11.1213 20.2475 11.4428 19.7116 11.795 19.4053C9.06938 19.0991 6.22125 18.0425 6.22125 13.3569C6.22125 12.0247 6.69594 10.9222 7.47687 10.0647C7.35437 9.75844 6.92562 8.50281 7.59937 6.81844C7.59937 6.81844 8.62531 6.49687 10.9681 8.07406C11.9481 7.79844 12.9894 7.66062 14.0306 7.66062C15.0719 7.66062 16.1131 7.79844 17.0931 8.07406C19.4359 6.48156 20.4619 6.81844 20.4619 6.81844C21.1356 8.50281 20.7069 9.75844 20.5844 10.0647C21.3653 10.9222 21.84 12.0094 21.84 13.3569C21.84 18.0578 18.9766 19.0991 16.2509 19.4053C16.695 19.7881 17.0778 20.5231 17.0778 21.6716C17.0778 23.31 17.0625 24.6269 17.0625 25.0403C17.0625 25.3619 17.2922 25.7447 17.9047 25.6222C20.3365 24.8012 22.4497 23.2383 23.9468 21.1534C25.4438 19.0685 26.2493 16.5667 26.25 14C26.25 7.23187 20.7681 1.75 14 1.75Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path
+                                        d="M14.0037 2C9.04517 2 4.57804 4.9866 2.6827 9.56221C0.787361 14.1378 1.83395 19.409 5.33745 22.9125C8.84096 26.4161 14.1122 27.4626 18.6878 25.5673C23.2698 23.6783 26.2564 19.2112 26.2564 14.2527C26.2564 7.48819 20.7682 2 14.0037 2ZM10.4427 20.7045H7.76885V12.0893H10.4427V20.7045ZM9.1026 10.9151C8.47082 10.9151 7.90286 10.5386 7.66036 9.95787C7.41786 9.37715 7.54549 8.70708 7.9922 8.26036C8.43253 7.81365 9.1026 7.67964 9.68333 7.91576C10.2641 8.15188 10.647 8.71984 10.6533 9.34524C10.6533 10.2131 9.96412 10.9087 9.1026 10.9151ZM20.4555 20.7045H17.7816V16.5118C17.7816 15.5099 17.7625 14.2336 16.3904 14.2336C15.0184 14.2336 14.7759 15.3184 14.7759 16.4416V20.7045H12.1147V12.0893H14.6801V13.2635H14.7184C15.0758 12.5871 15.9437 11.8724 17.2455 11.8724C19.9513 11.8724 20.4491 13.6528 20.4491 15.9694V20.7045H20.4555Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

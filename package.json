@@ -1,0 +1,21 @@
+{
+  "name": "one-auth-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/main.scss dist/main.css",
+    "watch:css": "sass --watch src/main.scss:dist/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sass": "^1.81.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}

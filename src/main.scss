@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Lato", "Roboto", sans-serif;
+}
+
+.main-banner {
+    background: rgb(212, 202, 238);
+    background: linear-gradient(106deg, rgba(212, 202, 238, 1) 6%, rgba(243, 214, 243, 1) 29%, rgba(227, 216, 242, 1) 84%, rgba(207, 226, 245, 1) 100%);
+
+}
+
+.main-banner2 {
+    background-image: linear-gradient(to right top, #460946, #3e0844, #370742, #2f0740, #27063e, #280741, #290745, #2a0848, #360a52, #420b5b, #4f0c65, #5d0c6e);
+}
